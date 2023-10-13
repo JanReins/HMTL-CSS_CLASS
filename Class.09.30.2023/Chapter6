@@ -1,0 +1,27 @@
+<!--
+AUTHOR:DUMAM-AG, JAN
+DECRIPTION: CHAPTER 6
+DATE: Oct. 7, 2023
+VERSION:1.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Box</title>
+<meta charset="utf-8">
+<style>
+
+</style>
+</head>
+<body>
+
+    <div class="div1">
+        This is the first box.
+    </div>
+    <div class="div2">
+        This is the second box.
+    </div>
+ 
+<p>Copyright &copy; 2023 Jan Reinhold T. Dumam-ag</p>
+</body>
+</html>

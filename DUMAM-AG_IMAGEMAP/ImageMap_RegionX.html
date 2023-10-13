@@ -1,0 +1,86 @@
+<!--
+AUTHOR:DUMAM-AG, JAN
+DECRIPTION: Region X UseMap
+DATE: Oct. 03, 2023
+VERSION:2.0
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Region X - Image Map</title>
+    </head>
+    <body style="background-color: lightblue; text-align:center;">
+        <h1>Map of the Philippines</h1>
+        <p>
+            <img src="r10-in-ph.png" alt="Map of the Philippines" usemap="#image-map">
+            <map name="image-map">
+                <area shape="rect" coords="500,410,570,465" alt="Region X: Northern Mindanao" href="#RegionX"/>
+            </map>
+        </p>
+        <hr size="5px" color="gray">
+        
+        
+        <div>
+            <h2>Region 10: Norther Mindanao</h2>
+            <img src="northernMindanao.png" alt="Map of Northern Mindanao" usemap="#r10" id="RegionX">
+            <map name="r10">
+                <area shape="circle" coords="393,91,22" alt="Camiguin" href="#camiguin"/>
+                <area shape="rect" coords="143,200,210,323" alt="Misamis Occidental" href="#misamisOccidental"/>
+                <area shape="poly" coords="164,379,232,416,318,313,364,280,297,268,170,352" alt="lanao Del Norte" href="#lanaoDelNorte"/>
+                <area shape="poly" coords="296,268,369,276,385,257,513,255,500,116,412,128,320,218,299,267" alt="Misamis Oriental" href="#misamisOriental"/>
+                <area shape="circle" coords="460,345,95" alt="Bukidnon" href="#bukidnon"/>
+            </map>
+
+            <hr size="5px" color="gray"/>
+        </div>
+
+        <div>
+            <h2>Camiguin</h2>
+            <img src="camiguin.png" alt="Map of Camiguin" id="camiguin" usemap="#camiguin">
+            <map name="camiguin">
+                <area shape="rect" coords="0,0,719,585" alt="Return to Region X" href="#RegionX">
+            </map>
+            <hr size="5px" color="gray"/>
+        </div>
+
+        <div>
+            <h2>Lanao Del Norte</h2>
+            <img src="LanaoDelNorte.png" alt="Map of Lanao del Norte" usemap="#lanao" id="lanaoDelNorte" usemap="lanao">
+            <map name="lanao">
+                <area shape="rect" coords="0,0,719,585" alt="Return to Region X" href="#RegionX">
+            </map>
+            <hr size="5px" color="gray"/>
+        </div>
+
+        <div>
+            <h2>Misamis Occidental</h2> 
+            <img src="misamis occidental.png" alt="Map of Misamis Occidental" usemap="#misamis" id="misamisOccidental">
+            <map name="misamis">
+                <area shape="rect" coords="0,0,719,585" alt="Return to Region X" href="#RegionX">
+            </map>
+            <hr size="5px" color="gray"/>
+        </div>
+
+        <div>
+            <h2>Misamis Oriental</h2>
+            <img src="misamis oriental.png" alt="Map of Misamis Oriental" usemap="#misamisOriental" id="misamisOriental">
+            <map name="misamisOriental">
+                <area shape="rect" coords="0,0,719,585" alt="Return to Region X" href="#RegionX"> 
+            </map>
+            <hr size="5px" color="gray"/>
+        </div>
+
+        <div>
+            <h2>Bukidnon</h2>
+            <img src="bukidnon.png" alt="Map of Bukidnon" usemap="#bukidnon" id="bukidnon" usemap="bukidnon">
+            <map name="bukidnon">
+                <area shape="rect" coords="0,0,719,585" alt="Return to Region X" href="#RegionX">
+            </map>
+            <hr size="5px" color="gray"/>
+        </div>
+    </body>
+    <footer>
+        
+    </footer>
+</html>

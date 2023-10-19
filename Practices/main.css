@@ -16,3 +16,18 @@ a:hover, a:active {
     color: #eee;
 }
 
+nav {
+    float: left;
+    width: 30%;
+    padding: 20px;
+}
+
+na ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+section {
+    clear:fix;
+}

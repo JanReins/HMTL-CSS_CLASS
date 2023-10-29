@@ -15,9 +15,9 @@ VERSION:v.1.0
         <caption>Table with header</caption>
 
         <tr>
-            <td>Name</td>
-            <td>Birthday</td>
-            <td>Phone</td>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Phone</th>
         </tr>
         <tr>
             <td>Airah</td>
@@ -41,35 +41,36 @@ VERSION:v.1.0
         </tr>
     </table>
 
-    <table border="1" align="right">
+    <table border="1" align="right" cellspacing="10" cellpadding="5">
         <caption>Table with vertical header</caption>
 
         <tr >
-            <td>Name</td>
+            <th>Name</th>
             <td>Birthday</td>
             <td>Phone</td>
         </tr>
         <tr>
-            <td style="font-weight: bold;">Airah</td>
+            <th>Airah</th>
             <td>April 25</td>
             <td>123456</td>
         </tr>
     </table>
-
-
-
-
     
-    <table style="width:100%" border="1" align="center" cellspacing="10" cellpadding="5" bgcolor="red">
+    <table border="1" style="width:100%" style="border-collapse: collapse;" align="center">
         <caption>Table with vertical header</caption>
 
-        <tr bgcolor="green">
-            <td style="font-weight: bold;" scope="col" >Name</td>
-            <td scope="col">Birthday</td>
-            <td>Phone</td>
+        <tr bgcolor="green" style="height:300px">
+            <th style="text-align: right;">Name</th>
+            <th scope="col">Birthday</th>
+            <th style="text-align: left;">Phone</th>
         </tr>
-        <tr bgcolor="yellow">
-            <td style="font-weight: bold;">Airah</td>
+        <tr bgcolor="yellow" style="height:300px">
+            <td>Airah</td>
+            <td>April 25</td>
+            <td>123456</td>
+        </tr>
+        <tr bgcolor="green" style="height:300px">
+            <td>Airah</td>
             <td>April 25</td>
             <td>123456</td>
         </tr>

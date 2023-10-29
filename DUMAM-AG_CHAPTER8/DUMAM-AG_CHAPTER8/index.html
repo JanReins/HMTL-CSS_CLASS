@@ -1,0 +1,78 @@
+<!--
+NAME: JAN REINHOLD T. DUMAM-AG
+DATE: OCT. 28, 2023
+PROJECT:Table
+VERSION:v.1.0
+-->
+
+<!DOCTYPE html>
+<head>
+    <title>HTML Tables</title>
+</head>
+
+<body>
+    <table border="1">
+        <caption>Table with header</caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>Airah</td>
+            <td>April 25</td>
+            <td>123456</td>
+        </tr>
+    </table>
+
+    <table border="1" align="center">
+        <caption>Table without header</caption>
+
+        <tr>
+            <td scope="col">Name</td>
+            <td scope="col">Birthday</td>
+            <td>Phone</td>
+        </tr>
+        <tr>
+            <td >Airah</td>
+            <td>April 25</td>
+            <td>123456</td>
+        </tr>
+    </table>
+
+    <table border="1" align="right" cellspacing="10" cellpadding="5">
+        <caption>Table with vertical header</caption>
+
+        <tr >
+            <th>Name</th>
+            <td>Birthday</td>
+            <td>Phone</td>
+        </tr>
+        <tr>
+            <th>Airah</th>
+            <td>April 25</td>
+            <td>123456</td>
+        </tr>
+    </table>
+    
+    <table border="1" style="width:100%" style="border-collapse: collapse;" align="center">
+        <caption>Table with vertical header</caption>
+
+        <tr bgcolor="green" style="height:300px">
+            <th style="text-align: right;">Name</th>
+            <th scope="col">Birthday</th>
+            <th style="text-align: left;">Phone</th>
+        </tr>
+        <tr bgcolor="yellow" style="height:300px">
+            <td>Airah</td>
+            <td>April 25</td>
+            <td>123456</td>
+        </tr>
+        <tr bgcolor="green" style="height:300px">
+            <td>Airah</td>
+            <td>April 25</td>
+            <td>123456</td>
+        </tr>
+    </table>
+</body>

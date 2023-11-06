@@ -196,5 +196,60 @@ tr:nth-of-type(even) {
     background-color: #D2B48C; 
 }
 
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    padding: 2em;
+}
+
+form label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 8em;
+    padding-right: 1em;
+}
+
+/* Input element selector */
+input {
+    display: block; /* Set display property to block for input elements */
+    margin-bottom: 1em; /* Set 1em of bottom margin for input elements */
+}
+
+/* Textarea element selector */
+textarea {
+    display: block; /* Set display property to block for textarea elements */
+    margin-bottom: 1em; /* Set 1em of bottom margin for textarea elements */
+}
+
+#mySubmit {
+    margin-left: 9.5em; /* Set left margin to 9.5em for the element with id "mySubmit" */
+} /*<button id="mySubmit">Submit</button>*/
+
+#herojobs {
+    height: 250px; /* Set the height to 250px */
+    background-image: url('herojobs.jpg'); /* Set the background image to 'herojobs.jpg' */
+    background-size: 100% 100%; /* Set the background size to cover the entire element */
+}
+
+/* Default styles for #herojobs (for larger screens) */
+#herojobs {
+    height: 250px;
+    background-image: url('herojobs.jpg');
+    background-size: 100% 100%;
+}
+
+/* Media query for smartphones and smaller screens */
+@media only screen and (max-width: 767px) {
+    #herojobs {
+        display: none; /* Hide the #herojobs element on smartphones (screens with width up to 767px) */
+    }
+
+    /* Additional styles for smartphones if needed */
+}
+
+
+
+
 
 </style>

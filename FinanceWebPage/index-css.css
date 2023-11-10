@@ -1,4 +1,4 @@
-/* General Reset */
+/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -17,15 +17,6 @@ header {
     color: #ffffff;
     padding: 1rem 0;
     text-align: center;
-}
-
-header #logo {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-header h1 {
-    display: inline;
 }
 
 nav ul {
@@ -47,43 +38,6 @@ nav a:hover {
     color: #a7ffeb;
 }
 
-.intro, .features {
-    padding: 2rem;
-    text-align: center;
-}
-
-.intro {
-    background-color: #e8f5e9;
-}
-
-.intro h2, .features h2 {
-    margin-bottom: 1rem;
-}
-
-.intro p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2e7d32;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.cta-button:hover {
-    background-color: #60ad5e;
-}
-
-.features .feature {
-    margin-bottom: 1rem;
-}
-
 footer {
     background-color: #004d40;
     color: #ffffff;
@@ -101,6 +55,7 @@ footer {
     color: #ffffff;
 }
 
+/* Responsive Design for Navigation */
 @media (max-width: 600px) {
     nav ul {
         text-align: center;
@@ -111,79 +66,22 @@ footer {
     }
 }
 
-
-/* General styles, matching the homepage */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #004d40;
-    color: #ffffff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav ul {
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-nav a:hover {
-    color: #a7ffeb;
-}
-
-main {
+/* Common Page Styles */
+.main-section {
     padding: 2rem;
     text-align: center;
-}
-
-/* Specific styles for loan calculator page */
-#loanCalculatorForm {
     background-color: #e8f5e9;
-    padding: 2rem;
+    max-width: 800px;
     margin: 2rem auto;
-    display: inline-block;
     border-radius: 8px;
 }
 
-#loanCalculatorForm div {
+.main-section h2 {
+    color: #2e7d32;
     margin-bottom: 1rem;
 }
 
-#loanCalculatorForm label {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-#loanCalculatorForm input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#loanCalculatorForm button {
+.main-section button {
     background-color: #2e7d32;
     color: white;
     padding: 10px 20px;
@@ -193,8 +91,61 @@ main {
     font-size: 1.1rem;
 }
 
-#loanCalculatorForm button:hover {
+.main-section button:hover {
     background-color: #60ad5e;
+}
+
+.main-section label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.main-section input, 
+.main-section select, 
+.main-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Responsive Design for Main Sections */
+@media (max-width: 768px) {
+    .main-section {
+        width: 90%;
+    }
+}
+
+/* Additional Specific Page Styles */
+.features .feature,
+#paymentSchedule table,
+#loanDetails,
+#paymentSchedule,
+#accountSettings,
+#loanApplicationForm fieldset,
+#forgotPasswordSection {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#paymentSchedule th, 
+#paymentSchedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#paymentSchedule th {
+    background-color: #c8e6c9;
+}
+
+/* Additional Styles for Specific Features */
+.intro p, .features p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
 #calculationResult {
@@ -202,33 +153,4 @@ main {
     padding: 1rem;
     background-color: #e0f2f1;
     border-radius: 4px;
-}
-
-footer {
-    background-color: #004d40;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-.footer-links a {
-    color: #a5d6a7;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer-links a:hover {
-    color: #ffffff;
-}
-
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    #loanCalculatorForm input,
-    #loanCalculatorForm button {
-        width: 90%;
-    }
 }

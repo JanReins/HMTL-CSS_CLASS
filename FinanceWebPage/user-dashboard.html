@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard - Loan Wizard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="user-dashboard.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loan-calculator.html">Loan Calculator</a></li>
+                <li><a href="application-form.html">Apply Now</a></li>
+                <li><a href="user-dashboard.html">My Account</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcomeSection">
+            <h2>Welcome, [User Name]</h2>
+            <p>Here's the overview of your loan management.</p>
+        </section>
+
+        <section id="loanDetails">
+            <h3>Loan Details</h3>
+            <p><strong>Loan Amount:</strong> $[amount]</p>
+            <p><strong>Interest Rate:</strong> [rate]%</p>
+            <p><strong>Loan Term:</strong> [term] years</p>
+            <p><strong>Monthly Payment:</strong> $[payment]</p>
+            <!-- More details can be added here -->
+        </section>
+
+        <section id="paymentSchedule">
+            <h3>Payment Schedule</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment Date</th>
+                        <th>Payment Amount</th>
+                        <th>Remaining Balance</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Payment schedule will be dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="accountSettings">
+            <h3>Account Settings</h3>
+            <button onclick="editProfile()">Edit Profile</button>
+            <button onclick="changePassword()">Change Password</button>
+            <!-- Additional settings can be added here -->
+        </section>co
+    </main>
+    <footer>
+        <p>&copy; 2023 Loan Wizard</p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-service.html">Terms of Service</a>
+    </footer>
+</body>
+</html>

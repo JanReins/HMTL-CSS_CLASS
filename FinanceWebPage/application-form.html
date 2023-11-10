@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Application - Loan Wizard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="application-form.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>Loan Application Form</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loan-calculator.html">Loan Calculator</a></li>
+                <li><a href="application-form.html">Apply Now</a></li>
+                <li><a href="user-dashboard.html">My Account</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="loanApplicationForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Loan Details</legend>
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="number" id="loanAmount" name="loanAmount" required>
+
+                <label for="loanPurpose">Purpose of Loan:</label>
+                <input type="text" id="loanPurpose" name="loanPurpose" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Financial Information</legend>
+                <label for="employmentStatus">Employment Status:</label>
+                <select id="employmentStatus" name="employmentStatus">
+                    <option value="employed">Employed</option>
+                    <option value="self-employed">Self-Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                    <option value="retired">Retired</option>
+                </select>
+
+                <label for="annualIncome">Annual Income:</label>
+                <input type="number" id="annualIncome" name="annualIncome" required>
+
+                <label for="creditScore">Credit Score:</label>
+                <input type="number" id="creditScore" name="creditScore" min="300" max="850" required>
+            </fieldset>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 Loan Wizard</p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-service.html">Terms of Service</a>
+    </footer>
+</body>
+</html>

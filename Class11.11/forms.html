@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <p>Below are type of Form Elements.</p>
+
+    <fieldset>
+        <legend>User Log-in</legend>
+        <form name="form1" method="post" action="template.html">
+            <label for="uname" accesskey="x" >Username:</label>
+            <input type="text" maxlength="12" size="20" value="Username" name="uname" id="uname"><br/>
+            <br/>
+            <label for="password">Password: </label> 
+            <input type="password" maxlength="12" size="20" value="123456" name="password" id="password"><br/>
+            <br/>
+
+
+            <br/>
+            <input type="checkbox" name="browser" id="IE" >
+            <label for="IE">Internet Explorer</label>
+            
+
+            <br/>
+            <input type="checkbox" name="browser" id="fire" checked>
+            <label for="fire">FireFox</label>
+            
+            
+            <br/>
+            <input type="checkbox" name="browser" id="opera">
+            <label for="opera">Opera</label>
+            
+            <br/>
+
+            <br/>
+            <input type="radio" name="favebrowser" id="IER">
+            <label for="IER">Internet Explorer</label>
+            
+
+            <br/>
+            <input type="radio" name="favebrowser" id="fireR" checked>
+            <label for="fireR">FireFox</label>
+            
+            
+            <br/>
+            <input type="radio" name="favebrowser" id="operaR">
+            <label for="operaR">Opera</label>
+            
+            <br/>
+
+            <!-- <br>
+            Add url
+            Add Telephone and format the number
+            Search Box
+            Data list
+            slider
+            range
+            date
+            color
+            
+
+            <br/>
+            -->
+
+            <br>
+            <label for="country">Country: </label>
+            <select name="country" id="country" multiple>
+                <option value="PH">Philippines</option>
+                <option value="SG">Singapore</option>
+                <option value="HK">Hongkong</option>
+                <option>France</option>
+                <option>Germany</option>
+            <optgroup>
+                <option>North Africa</option>
+                <option>South Africa</option>
+            </optgroup>
+            </select><br/>
+
+
+
+            <br/>
+
+            <label for="com">Comments: </label>
+            <textarea name="com" id="com" cols="50" rows="5"></textarea><br/>
+
+            <br/>
+            
+            <button type="submit">
+            <img src="submit-button.png" alt="Submit" width="100" height="30">
+            </button>
+
+            <button type="reset">
+            <img src="close-button.png" alt="Cancel" width="70" height="50">
+            </button>
+
+            <!-- 
+            <input type="image" name="submit" src="submit-button.png" alt="Submit" width="100" height="30">
+            <input type="image" name="reset" src="close-button.png" alt="Cancel" width="70" height="50">
+            -->
+
+            <!-- 
+            <input type="reset" value="Cancel"><br/>
+            <input type="submit" value="Submit"><br>
+            -->
+
+        </form>
+
+    </fieldset>
+
+
+</body>
+</html>

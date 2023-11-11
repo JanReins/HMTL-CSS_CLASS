@@ -1,3 +1,10 @@
+<!--
+NAME: JAN REINHOLD T. DUMAM-AG
+DATE: NOV. 11, 2023
+PROJECT:FORMS
+VERSION:v.2
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,11 +18,31 @@
         <legend>User Log-in</legend>
         <form name="form1" method="post" action="template.html">
             <label for="uname" accesskey="x" >Username:</label>
-            <input type="text" maxlength="12" size="20" value="Username" name="uname" id="uname"><br/>
+            <input type="text" maxlength="12" size="20" placeholder="username" name="uname" id="uname">
+            <br/>
+            
             <br/>
             <label for="password">Password: </label> 
-            <input type="password" maxlength="12" size="20" value="123456" name="password" id="password"><br/>
+            <input type="password" maxlength="12" size="20" placeholder="username" name="password" id="password"><br/>
             <br/>
+            <label for="email">Email: </label>
+            <input type="email" maxlength="12" size="20" name="email" id="email">
+            <br/>
+
+            <br/>
+            <label for="website">Personal Website</label><br/>
+            <input type="url" name="website" id="website">
+            <br/>
+            
+            <br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" name="mobile" id="mobile">
+            <br/>
+            
+            <br>
+            <label for="keyword">Search:</label>
+            <input type="search" name="keyword" id="keyword">
+            <br>
 
 
             <br/>
@@ -50,20 +77,6 @@
             
             <br/>
 
-            <!-- <br>
-            Add url
-            Add Telephone and format the number
-            Search Box
-            Data list
-            slider
-            range
-            date
-            color
-            
-
-            <br/>
-            -->
-
             <br>
             <label for="country">Country: </label>
             <select name="country" id="country" multiple>
@@ -72,12 +85,41 @@
                 <option value="HK">Hongkong</option>
                 <option>France</option>
                 <option>Germany</option>
-            <optgroup>
+            <optgroup label="Africa">
                 <option>North Africa</option>
                 <option>South Africa</option>
             </optgroup>
             </select><br/>
+            
+            <br>
+            <label for="language">Language spoken: </label>
+            <input type="text" name="language" id="language" list="languages">
+            <datalist id="languages">
+                <option value="filipino" label="filipino">
+                <option value="german" label="german">
+                <option value="french" label="french">
+            </datalist>
 
+            <br/>
+            <label for ="effeciency">Language Effeciency: </label>
+            <input type="range" name="effeciency" min="0" max="100">
+            <br/>
+
+            <br/>
+            <label for ="effeciency">Language Effeciency: </label>
+            <input type="number" name="effeciency" min="0" max="10">
+            <br/>
+
+            <br/>
+            <label for="myDate">Choose a Date</label>
+            <input type="date" name="myDate" id="myDate">
+            <br/>
+
+
+            <br/>
+            <label for="favecolor">Choose your favorite color:</label>
+            <input type="color" name="favecolor" id="favecolor">
+            <br/>
 
 
             <br/>
@@ -108,7 +150,6 @@
         </form>
 
     </fieldset>
-
 
 </body>
 </html>

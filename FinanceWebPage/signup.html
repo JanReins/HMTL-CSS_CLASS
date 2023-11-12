@@ -9,10 +9,6 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="logo.png" alt="Finance Flow Logo"> <!-- Replace with your actual logo -->
-            <h1>Finance Flow</h1>
-        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,28 +20,41 @@
         </nav>
     </header>
     <main>
-        <section id="authContainer">
-            <div id="signupSection">
-                <h2>Sign Up</h2>
-                <form id="signupForm">
-                    <div class="form-group">
-                        <label for="signupFullName">Full Name:</label>
-                        <input type="text" id="signupFullName" name="signupFullName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="signupEmail">Email:</label>
-                        <input type="email" id="signupEmail" name="signupEmail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="signupPassword">Password:</label>
-                        <input type="password" id="signupPassword" name="signupPassword" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Sign Up</button>
-                    </div>
-                </form>
+        <div class="container">
+            <div class="logo-section">
+              <img src="FlowLogo.png" alt="Finance Flow Logo">
             </div>
-        </section>
+
+            <section id="authContainer">
+                <div id="signupSection">
+                    <h2>Sign Up</h2>
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="signupFullName">Full Name:</label>
+                            <input type="text" id="signupFullName" name="signupFullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Email:</label>
+                            <input type="email" id="signupEmail" name="signupEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPassword">Password:</label>
+                            <input type="password" id="signupPassword" name="signupPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+
+
+        
+
+
+
     </main>
     <footer>
         <p>&copy; 2023 Finance Flow. All rights reserved.</p>

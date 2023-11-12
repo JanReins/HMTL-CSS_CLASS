@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #004d40;
+    background-color: #709775;
     color: #ffffff;
     padding: 1rem 0;
     text-align: center;
@@ -153,4 +153,13 @@ footer {
     padding: 1rem;
     background-color: #e0f2f1;
     border-radius: 4px;
+}
+
+.landing {
+    background-color: #A1CCA5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }

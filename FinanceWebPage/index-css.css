@@ -12,6 +12,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 header {
     background-color: #709775;
     color: #ffffff;
@@ -48,6 +50,19 @@ nav a:hover {
     background-color: #D9F5DA;
 }
 
+/*Content paddinf*/
+
+fieldset {
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+}
+
+/*Content padding*/
+
+
 footer {
     background-color: #709775;
     color: #ffffff;
@@ -81,179 +96,6 @@ footer {
 
 
 
-
-
-/* Styles for the main container */
-.container {
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers the children horizontally */
-    align-items: center; /* Centers the children vertically */
-    min-height: 100vh; /* Ensures the container is at least the height of the viewport */
-    padding: 1em; /* Optional padding */
-  }
-  
-  /* Styles for the logo section */
-  .logo-section {
-    flex: 1; /* Assigns a flex-grow value */
-    text-align: left; /* Centers the content inside the logo section */
-    /* Add any other styling for the logo section here */
-  }
-  
-  /* Styles for the authentication container */
-  #authContainer {
-    flex: 1; /* Assigns a flex-grow value */
-    max-width: 400px; /* Sets a maximum width for the sign-up form */
-  }
-  
-  /* Styles for the signup section */
-  #signupSection {
-    width: 100%;
-  }
-  
-  /* Styles for each form group */
-  .form-group {
-    margin-bottom: 1em; /* Adds space between form fields */
-  }
-  
-  /* Styles for the form input and button */
-  input[type=text],
-  input[type=email],
-  input[type=password],
-  button {
-    width: 100%; /* Full width */
-    padding: 0.5em; /* Padding inside the input fields and button */
-  }
-  
-  /* Styles for the button */
-  button {
-    background-color: #4CAF50; /* Example button color, change as needed */
-    color: white; /* Text color for the button */
-    border: none; /* Removes the default border */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-  }
-  
-  /* Optional: Styles for the header, main, and footer for overall page layout */
-  header,
-  footer {
-    text-align: center;
-    padding: 1em;
-  }
-  
-  main {
-    padding: 1em;
-  }
-  
-  /* Optional: Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column; /* Stacks the logo and sign-up form */
-    }
-    .logo-section,
-    #authContainer {
-      width: 100%; /* Full width for small screens */
-    }
-  }
-  
-
-
-/*end of signup section*/
-
-
-
-
-.main-section {
-    padding: 2rem;
-    text-align: center;
-    background-color: #e8f5e9;
-    max-width: 800px;
-    margin: 2rem auto;
-    border-radius: 8px;
-}
-
-.main-section h2 {
-    color: #2e7d32;
-    margin-bottom: 1rem;
-}
-
-.main-section button {
-    background-color: #2e7d32;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-.main-section button:hover {
-    background-color: #60ad5e;
-}
-
-.main-section label {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-.main-section input, 
-.main-section select, 
-.main-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Responsive Design for Main Sections */
-@media (max-width: 768px) {
-    .main-section {
-        width: 90%;
-    }
-}
-
-/* Additional Specific Page Styles */
-.features .feature,
-#paymentSchedule table,
-#loanDetails,
-#paymentSchedule,
-#accountSettings,
-#loanApplicationForm fieldset,
-#forgotPasswordSection {
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#paymentSchedule th, 
-#paymentSchedule td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-#paymentSchedule th {
-    background-color: #c8e6c9;
-}
-
-/* Additional Styles for Specific Features */
-.intro p, .features p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-
-#calculationResult {
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: #e0f2f1;
-    border-radius: 4px;
-}
-
-.landing {
-    background-color: #A1CCA5;
-    display: flex;
-    justify-content: center;
+main {
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }

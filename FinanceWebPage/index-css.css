@@ -116,3 +116,19 @@ footer {
   .cta-button:hover {
     background-color: #45a049;
   }
+
+
+
+  /*Loan Application Form*/
+
+  #loanApplicationForm {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

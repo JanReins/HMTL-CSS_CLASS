@@ -94,8 +94,7 @@ footer {
 /* end of homepage*/
 
 
-
-
-main {
-    align-items: center;
+.logo {
+    display: flex; 
+    justify-content: center;
 }

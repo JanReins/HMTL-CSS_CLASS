@@ -57,7 +57,7 @@ fieldset {
 }
 
 main {
-    padding: 10px;
+    padding: 10px;  
 }
 
 /*Content padding*/
@@ -121,14 +121,31 @@ footer {
 
   /*Loan Application Form*/
 
-  #loanApplicationForm {
-    display: flex;
-    justify-content: center;
-  }
 
-  .form-container {
+  .flex-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+  }
+
+  .flex-item {
+    flex: 1; /* Items will grow and shrink equally */
+    margin: 5px;
+    padding: 10px;
+    background: #a5d6a7;
+  }
+
+  #submitbutton {
+    background-color: #45a049; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-style: bold;
+
   }

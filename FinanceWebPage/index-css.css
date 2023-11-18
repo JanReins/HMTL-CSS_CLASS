@@ -10,9 +10,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    margin: 80%;
 }
-
 
 
 header {
@@ -20,6 +18,7 @@ header {
     color: #ffffff;
     padding: 1rem 0;
     text-align: center;
+    font-size: 16px;
 }
 
 nav ul {
@@ -90,10 +89,6 @@ footer {
         display: block;
         margin-bottom: 5px;
     }
-
-    .logo {
-        width: 500px;
-    }
 }
 
 /* end of homepage*/
@@ -101,7 +96,7 @@ footer {
 
 .logo {
     justify-content: center;
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 
@@ -155,3 +150,15 @@ footer {
     width: 50%;
     margin: 0 auto;
   }
+
+
+  /* User dashboard*/
+
+  section {
+    padding: 20px;
+  }
+
+  section h3 {
+    padding: 10px 0;
+  }
+

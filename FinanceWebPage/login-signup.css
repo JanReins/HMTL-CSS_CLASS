@@ -43,16 +43,23 @@ main {
     text-align: center;
 }
 
+.logo {
+    justify-content: center;
+    width: 100px;
+    height: auto;
+}
+
+
 /* Auth container styles */
 #authContainer {
     max-width: 500px;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 #loginSection, #signupSection {
     background-color: #e8f5e9;
     margin-bottom: 1rem;
-    padding: 2rem;
+    padding: .5rem;
     border-radius: 8px;
 }
 

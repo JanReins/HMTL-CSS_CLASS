@@ -50,17 +50,56 @@ nav a:hover {
     background-color: #D9F5DA;
 }
 
-/*Content paddinf*/
+/*Content padding need to study this*/
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    flex: 1; /* Items will grow and shrink equally */
+    margin: 5px;
+    padding: 10px;
+    background: #e8f5e9;
+  }
 
 fieldset {
+    border: 1px solid #ddd;
     padding: 10px;
 }
 
-main {
-    padding: 10px;  
+legend {
+    font-weight: bold;
 }
 
-/*Content padding*/
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    margin-right: 10px;
+    width: 40%; /* Adjust width as needed */
+}
+
+.form-row input, .form-row select {
+    width: 60%; /* Adjust width as needed */
+    flex-grow: 1;
+}
+
+
+main {
+    padding: 5px;  
+}
+
+/*Content padding */
 
 
 footer {
@@ -100,6 +139,8 @@ footer {
     height: auto;
 }
 
+
+
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -118,20 +159,7 @@ footer {
   /*Loan Application Form*/
 
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
 
-  .flex-item {
-    flex: 1; /* Items will grow and shrink equally */
-    margin: 5px;
-    padding: 10px;
-    background: #a5d6a7;
-  }
 
   #submitbutton {
     background-color: #45a049; /* Green */

@@ -24,8 +24,8 @@
     </header>
     <main>
         <div class="flex-container">
-            <div class="flex-item">
-            <form id="loanApplicationForm" method="post" action="https://sample.html"> <!-- add form action and method or Javascript??-->
+                <div class="flex-item">
+                <form id="loanApplicationForm" method="post" action="https://sample.html"> <!-- add form action and method or Javascript??-->
                     <fieldset>
                         <legend>Personal Information</legend>
                         <div><label for="fullName">Full Name: <input type="text" id="fullName" name="fullName" required></label></div>
@@ -48,22 +48,22 @@
                         
                         <legend>Financial Information</legend>
 
-                        <label for="employmentStatus">Employment Status:</label>
-                        <select id="employmentStatus" name="employmentStatus">
+                        <div><label for="employmentStatus">Employment Status:</label></div>
+                        <div></div><select id="employmentStatus" name="employmentStatus">
                             <option value="employed">Employed</option>
                             <option value="self-employed">Self-Employed</option>
                             <option value="unemployed">Unemployed</option>
                             <option value="student">Student</option>
                             <option value="retired">Retired</option>
-                        </select>
+                        </select></div>
 
                         
-                        <label for="annualIncome">Annual Income:</label>
-                        <input type="number" id="annualIncome" name="annualIncome" required>
+                        <div><label for="annualIncome">Annual Income:</label>
+                        <input type="number" id="annualIncome" name="annualIncome" required></div>
 
                         
-                        <label for="creditScore">Credit Score:</label>
-                        <input type="number" id="creditScore" name="creditScore" min="300" max="850" required>
+                        <div><label for="creditScore">Credit Score:</label>
+                        <input type="number" id="creditScore" name="creditScore" min="300" max="850" required></div>
                     </fieldset>
                 </div>
 

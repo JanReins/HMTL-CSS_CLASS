@@ -7,11 +7,11 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Change as needed */
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
 }
-
 
 header {
     background-color: #709775;
@@ -50,57 +50,6 @@ nav a:hover {
     background-color: #D9F5DA;
 }
 
-/*Content padding need to study this*/
-
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-wrap: wrap;
-  }
-
-  .flex-item {
-    flex: 1; /* Items will grow and shrink equally */
-    margin: 5px;
-    padding: 10px;
-    background: #e8f5e9;
-  }
-
-fieldset {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-
-legend {
-    font-weight: bold;
-}
-
-.form-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.form-row label {
-    margin-right: 10px;
-    width: 40%; /* Adjust width as needed */
-}
-
-.form-row input, .form-row select {
-    width: 60%; /* Adjust width as needed */
-    flex-grow: 1;
-}
-
-
-main {
-    padding: 5px;  
-}
-
-/*Content padding */
-
 
 footer {
     background-color: #709775;
@@ -128,7 +77,12 @@ footer {
         display: block;
         margin-bottom: 5px;
     }
+    section {
+        padding: 15px; /* Less padding on smaller screens */
+    }
 }
+
+
 
 /* end of homepage*/
 
@@ -158,35 +112,156 @@ footer {
 
   /*Loan Application Form*/
 
+/* Style for the overall layout */
+/*Content padding need to study this*/
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stack the flex items vertically */
+    align-items: center; /* Center align the flex items horizontally */
+    gap: 20px; /* Add space between flex items */
+    margin: 20px; /* Add some margin outside the flex container */
+}
 
+.flex-item {
+    background-color: white;
+    padding: 20px; /* Padding inside the flex items */
+    width: 60%; /* Set a width for the flex items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add a subtle shadow for depth */
+    border-radius: 5px; /* Slightly round the corners */
+}
 
+form {
+    width: 100%; /* Form should take the full width of its parent */
+}
 
-  #submitbutton {
-    background-color: #45a049; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-style: bold;
+/* Style for the form elements */
+fieldset {
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 10px; /* Padding inside the fieldset */
+    margin-bottom: 20px; /* Add space below each fieldset */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add a subtle shadow for depth */
+}
 
-  }
+legend {
+    padding: 0 10px; /* Padding on the sides of the legend text */
+    background-color: #e6e6e6; /* Light background color for the legend */
+    border-radius: 5px; /* Slightly round the corners of the legend */
+}
+
+label {
+    display: block; /* Make each label take up the full width */
+    margin-bottom: 10px; /* Add space below each label/input pair */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%; /* Make inputs take the full width of their parent */
+    padding: 8px; /* Add padding inside the inputs for better readability */
+    margin-top: 5px; /* Add some space at the top of the input */
+    border: 1px solid #ccc; /* Light grey border for the inputs */
+    border-radius: 4px; /* Slightly round the corners of the inputs */
+}
+
+button#submitbutton {
+    background-color: #709775; /* Green background for the submit button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border for the button */
+    border-radius: 4px; /* Slightly round the corners of the button */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    width: auto; /* Auto width for the button */
+    display: block; /* Make the button a block element */
+    margin: 10px auto;
+}
+
+button#submitbutton:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* Stack flex items in a column on smaller screens */
+    }
+
+    .flex-item {
+        width: 90%; /* Make flex items wider on smaller screens */
+    }
+}
+
   
-  .welcomeSection {
-    width: 50%;
-    margin: 0 auto;
-  }
-
 
   /* User dashboard*/
 
+
+
   section {
     padding: 20px;
+  }
+
+  .welcomeSection {
+    width: 50%;
+    margin: 0 auto;
   }
 
   section h3 {
     padding: 10px 0;
   }
 
+
+  body#dashboard {
+    font-family: Arial, sans-serif; /* Change as needed */
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text for readability */
+    line-height: 1.6; /* Spacing for line-height for readability */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px; /* Spacing between sections */
+    border-radius: 5px; /* Slightly rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for sections */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Spacing above the table */
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light grey border for table cells */
+}
+
+table th {
+    background-color: #f0f0f0; /* Light grey background for table headers */
+}
+
+/* Button styles */
+button {
+    background-color: #709775; /* Bootstrap's default button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px; /* Slightly rounded corners for buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker blue on hover */
+}
+/*dashboard*/

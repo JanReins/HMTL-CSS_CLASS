@@ -131,8 +131,15 @@ footer {
 }
 
 form {
-    width: 100%; /* Form should take the full width of its parent */
-}
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
 
 /* Style for the form elements */
 fieldset {

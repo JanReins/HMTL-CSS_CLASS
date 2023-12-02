@@ -1,0 +1,58 @@
+<!--
+NAME: JAN REINHOLD T. DUMAM-AG
+DATE: DEC. 02, 2023
+PROJECT:JAVAJAM14
+VERSION:v.14.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaJam Coffee House Jobs</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>JavaJam Coffee House</h1>
+                <link rel="stylesheet" href="javajam.css">
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li></li><a href="menu.html">Menu</a></li>
+                    <li></li><a href="music.html">Music</a></li>
+                    <li></li><a href="jobs.html">Jobs</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div id="herojobs"></div>
+
+                <h2>Jobs at Javajam</h2>
+                <p>Want to work at Javajam? Fill out the form below to start your application</p>
+
+                <p>Required fields are marked with an asterisk (*).</p>
+                <form action="https://webdevbasics.net/scripts/javajam8.php" method="post">
+                    <label for="myName">*Name:</label>
+                    <input type="text" name="myName" id="myName" required>
+                    <label for="myEmail">*E-mail:</label>
+                    <input type="email" name="email" id="myEmail" required>
+                    <label for="myExperience">*Experience:</label>
+                    <textarea id="myExperience" name="myExperience" rows="2" cols="20" required></textarea><br>
+                    <input type="submit" id="mySubmit" value="Apply Now">
+                    
+                </form>
+
+
+            </main>
+
+            <footer>
+                <p>
+                    Copyright 2018 JavaJam Coffee House<br>
+                    janreinhold@dumam-ag.com
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
